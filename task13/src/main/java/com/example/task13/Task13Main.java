@@ -6,14 +6,32 @@ public class Task13Main {
         // например вот так:
         /*
         int[] arr = {9, 1100, 7, 8};
-        removeMoreThen1000(arr);
-        System.out.println(java.util.Arrays.toString(arr));
+        int[] result = removeMoreThen1000(arr);
+        System.out.println(java.util.Arrays.toString(result));
          */
     }
 
     static int[] removeMoreThen1000(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return  null;
+        if (arr == null) {
+            return null;
+        }
+
+        int count = 0;
+        for (int value : arr) {
+            if (value <= 1000) {
+                count++;
+            }
+        }
+
+        int[] result = new int[count];
+        int index = 0;
+        for (int value : arr) {
+            if (value <= 1000) {
+                result[index++] = value;
+            }
+        }
+
+        return result;
     }
 
 }
