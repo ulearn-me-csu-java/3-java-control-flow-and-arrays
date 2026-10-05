@@ -14,8 +14,14 @@ public class Task09Main {
     }
 
     static int min(int[] arr) {
+        int a=arr[0];
+        for (int i=1;i<arr.length;i++) {
+            if (arr[i]<a) {
+                a=arr[i];
+            }
+        }
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        return a;
     }
 
 }
