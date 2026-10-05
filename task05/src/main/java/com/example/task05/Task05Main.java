@@ -10,7 +10,14 @@ public class Task05Main {
     }
 
     static int getMin(int a, int b, int c) {
+        int d=a;
+        if (b<a) {
+            d=b;
+        }
+        if (c<b) {
+            d=c;
+        }
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+    return d;
     }
 }
