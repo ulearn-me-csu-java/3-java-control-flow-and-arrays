@@ -10,6 +10,9 @@ public class Task02Main {
     }
 
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        String[] seasons = {"зима", "весна", "лето", "осень"};
+        int index = (monthNumber % 12) / 3;
+        return seasons[index];
+        
     }
 }
